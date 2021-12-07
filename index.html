@@ -79,7 +79,7 @@
             для вашего бизнеса
           </h1>
 
-          <button type="button" class="hero-btn">Заказать услугу</button>
+          <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -162,6 +162,9 @@
                   width="370"
                   height="294"
                 />
+                <div class="description">
+                  <p>Десктопные приложения</p>
+                </div>
               </div>
             </li>
 
@@ -173,6 +176,9 @@
                   width="370"
                   height="294"
                 />
+                <div class="description">
+                  <p>Мобильные приложения</p>
+                </div>
               </div>
             </li>
 
@@ -184,6 +190,9 @@
                   width="370"
                   height="294"
                 />
+                <div class="description">
+                  <p>Дизайнерские решения</p>
+                </div>
               </div>
             </li>
           </ul>
@@ -592,5 +601,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg width="18" height="18">
+            <use href="./images/sprite.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
